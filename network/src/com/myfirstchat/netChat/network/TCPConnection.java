@@ -64,7 +64,7 @@ public class TCPConnection {
         }
     }
 
-    // methods interrupts the thread and closes connection
+    // method interrupts the thread and closes connection
     public synchronized void disconnect() {
         rxThread.interrupt();
         try {
